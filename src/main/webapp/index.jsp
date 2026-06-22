@@ -1,5 +1,5 @@
 <html>
 <body>
-<h1>S2I Hello from Boomi</h1>
+<h1>S2I Hello from Boomi v2</h1>
 </body>
 </html>
