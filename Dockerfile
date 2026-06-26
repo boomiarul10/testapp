@@ -3,6 +3,6 @@ COPY ./src /usr/src/app/src
 COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean install
 
-FROM tomcat
+FROM docker.io/tomcat
 RUN rm -fr /usr/local/tomcat/webapps/ROOT
 COPY --from=stage1 /usr/src/app/target/testapp.war /usr/local/tomcat/webapps/ROOT.war
